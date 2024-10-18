@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Editkaro.in Portfolio</h1>
+        <nav>
+            <button onclick="filterVideos('all')">All</button>
+            <button onclick="filterVideos('short')">Short-form Videos</button>
+            <button onclick="filterVideos('long')">Long-form Videos</button>
+            <button onclick="filterVideos('gaming')">Gaming Videos</button>
+            <button onclick="filterVideos('football')">Football Edits</button>
+            <button onclick="filterVideos('ecommerce')">eCommerce Ads</button>
+            <button onclick="filterVideos('documentary')">Documentary Style</button>
+            <button onclick="filterVideos('color')">Color Grading</button>
+            <button onclick="filterVideos('anime')">Anime Videos</button>
+            <button onclick="filterVideos('ads')">Ads</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videoGallery">
+            <div class="video-card short">
+                <div class="video-preview" data-video-id="zdZFb6X3wqU">
+                    <img src="https://img.youtube.com/vi/zdZFb6X3wqU/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/zdZFb6X3wqU/hqdefault.jpg" 
+                         alt="Short Video Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Short-form Video</p>
+            </div>
+            <div class="video-card long">
+                <div class="video-preview" data-video-id="Byjh0Og_XVs">
+                    <img src="https://img.youtube.com/vi/Byjh0Og_XVs/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/Byjh0Og_XVs/hqdefault.jpg" 
+                         alt="Long Video Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Long-form Video</p>
+            </div>
+            <div class="video-card gaming">
+                <div class="video-preview" data-video-id="rZqlaSDOloI">
+                    <img src="https://img.youtube.com/vi/rZqlaSDOloI/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/rZqlaSDOloI/hqdefault.jpg" 
+                         alt="Gaming Video Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Gaming Video</p>
+            </div>
+            <div class="video-card football">
+                <div class="video-preview" data-video-id="uhdPsk4KbcA">
+                    <img src="https://img.youtube.com/vi/uhdPsk4KbcA/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/uhdPsk4KbcA/hqdefault.jpg" 
+                         alt="Football Edit Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Football Edit</p>
+            </div>
+            <div class="video-card documentary">
+                <div class="video-preview" data-video-id="qO66WeTTFpQ">
+                    <img src="https://img.youtube.com/vi/qO66WeTTFpQ/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/qO66WeTTFpQ/hqdefault.jpg" 
+                         alt="Documentary Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Documentary Style</p>
+            </div>
+            <div class="video-card anime">
+                <div class="video-preview" data-video-id="xmbxe0Jtxmc">
+                    <img src="https://img.youtube.com/vi/xmbxe0Jtxmc/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/xmbxe0Jtxmc/hqdefault.jpg" 
+                         alt="Anime Video Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Anime Video</p>
+            </div>
+            <div class="video-card color">
+                <div class="video-preview" data-video-id="FtN1egyLomc">
+                    <img src="https://img.youtube.com/vi/FtN1egyLomc/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/FtN1egyLomc/hqdefault.jpg" 
+                         alt="Color Grading Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Color Grading</p>
+            </div>
+            <div class="video-card ecommerce">
+                <div class="video-preview" data-video-id="cmIlt95f2Pc">
+                    <img src="https://img.youtube.com/vi/cmIlt95f2Pc/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/cmIlt95f2Pc/hqdefault.jpg" 
+                         alt="eCommerce Ads Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>eCommerce Ads</p>
+            </div>
+            <div class="video-card ads">
+                <div class="video-preview" data-video-id="A4WZF74dAg4">
+                    <img src="https://img.youtube.com/vi/A4WZF74dAg4/hqdefault.jpg" 
+                         data-original-src="https://img.youtube.com/vi/A4WZF74dAg4/hqdefault.jpg" 
+                         alt="Ads Preview">
+                    <div class="play-button">&#9658;</div>
+                </div>
+                <p>Ads</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Video Preview -->
+    <div id="videoModal" class="video-modal" style="display:none;">
+        <div class="video-container">
+            <button class="close-modal">Close</button>
+            <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
